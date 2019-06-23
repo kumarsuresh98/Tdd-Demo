@@ -26,11 +26,11 @@ git clone ssh://git@github.com/[username]/[repository-name].git  : 	Create a loc
 Basic Snapshotting
 -------------------
 
-git status               : Check status
-git add [file-name.txt]	 : Add a file to the staging area
-git add -A               : Add all new and changed files to the staging area
-git commit -m "message]" : Commit changes
-git rm -r [file-name.txt]: Remove a file (or folder)
+git status               : Check status<br>
+git add [file-name.txt]	 : Add a file to the staging area<br>
+git add -A               : Add all new and changed files to the staging area<br>
+git commit -m "message]" : Commit changes<br>
+git rm -r [file-name.txt]: Remove a file (or folder)<br>
 
 
 
