@@ -64,6 +64,14 @@ git remote add origin ssh://git@github.com/[username]/[repository-name].git	 : A
 git remote set-url origin ssh://git@github.com/[username]/[repository-name].git	 : Set a repository's origin branch to SSH<br>
 
 
+Inspection & Comparison
+-----------------------
+
+git log	: View changes<br>
+git log --summary	: View changes (detailed)<br>
+git diff [source branch] [target branch]	: Preview changes before merging<br>
+
+
 
 Cheers...
 SureshKumar
