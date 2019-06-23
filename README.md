@@ -33,7 +33,24 @@ git commit -m "message]" : Commit changes<br>
 git rm -r [file-name.txt]: Remove a file (or folder)<br>
 
 
+Branching & Merging
+-------------------
 
+
+git branch	: List branches (the asterisk denotes the current branch)<br>
+git branch -a	 : List all branches (local and remote)<br><br><br>
+git branch [branch name]	: Create a new branch<br><br>
+git branch -d [branch name]	 : Delete a branch<br>
+git push origin --delete [branch name]	 : Delete a remote branch<br>
+git checkout -b [branch name]	 : Create a new branch and switch to it<br>
+git checkout -b [branch name] origin/[branch name]	 : Clone a remote branch and switch to it<br>
+git checkout [branch name]	 : Switch to a branch<br>
+git checkout -	: Switch to the branch last checked out<br>
+git checkout -- [file-name.txt]	 : Discard changes to a file<br>
+git merge [branch name]	 : Merge a branch into the active branch<br>
+git merge [source branch] [target branch]	 : Merge a branch into a target branch<br>
+git stash	: Stash changes in a dirty working directory<br>
+git stash clear : 	Remove all stashed entries<br>
 
 
 
