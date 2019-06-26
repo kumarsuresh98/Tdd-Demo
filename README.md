@@ -73,5 +73,11 @@ git diff [source branch] [target branch]	: Preview changes before merging<br>
 
 
 
+//Spring Data JPA annotations
+
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/
+
+https://dzone.com/articles/all-jpa-annotations-mapping-annotations
+
 Cheers...
 SureshKumar
