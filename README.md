@@ -85,5 +85,9 @@ Exception Handler in Springboot
 
 https://www.baeldung.com/exception-handling-for-rest-with-spring
 
+
+BLOB Reference
+
+https://docs.jboss.org/hibernate/orm/5.3/userguide/html_single/Hibernate_User_Guide.html#basic-blob-example
 Cheers...
 SureshKumar
