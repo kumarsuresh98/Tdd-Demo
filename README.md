@@ -89,5 +89,17 @@ https://www.baeldung.com/exception-handling-for-rest-with-spring
 BLOB Reference
 
 https://docs.jboss.org/hibernate/orm/5.3/userguide/html_single/Hibernate_User_Guide.html#basic-blob-example
-Cheers...
-SureshKumar
+
+
+Named query
+https://javadeveloperzone.com/spring/spring-jpa-query-in-clause-example/
+
+    @Repository
+    @Transactional
+    public interface EmployeeDAO extends JpaRepository<Employee,Integer> {
+        List<Employee> findByEmployeeNameIn(List<String> names);                // 1. Spring JPA In cause using method name
+        @Query("SELECT e FROM Employee e WHERE e.employeeName IN (:names)")     // 2. Spring JPA In cause using @Query
+        List<Employee> findByEmployeeNames(@Param("names")List<String> names);
+        @Query(nativeQuery =true,value = "SELECT * FROM Employee as e WHERE e.employeeName IN (:names)")   // 3. Spring JPA In cause using native query
+        List<Employee> findByEmployeeName(@Param("names") List<String> names);
+    }
