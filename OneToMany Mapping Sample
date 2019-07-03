@@ -1,0 +1,36 @@
+
+ONE TO MANY UNI DIRECTIONAL
+---------------------------
+
+// Book has many to one with category
+
+@Entity
+public class Book {
+    @Id
+    @GeneratedValue(strategy=GenerationType.TABLE)
+    private Long id;
+
+    @Column(name="book_cat_id")
+    private String catId;
+
+}
+
+
+// BookCategory has one to many with books as one category can have multiple books
+
+@Entity
+public class BookCategory {
+
+    @Id
+    @Column(name="cat_id")
+    private String name;
+
+
+    @OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL,orphanRemoval = true)
+    @JoinColumn(name="book_cat_id",referencedColumnName = "cat_id")
+    private List<Book> books;
+    
+ }
+ 
+ 
+ 
