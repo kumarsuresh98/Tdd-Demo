@@ -1,5 +1,5 @@
 
-ONE TO MANY UNI DIRECTIONAL
+<b>ONE TO MANY UNI DIRECTIONAL
 ---------------------------
 
 // Book has many to one with category
@@ -33,4 +33,11 @@ public class BookCategory {
  }
  
  
+ // in the above 
  
+ @JoinColumn(name="book_cat_id",referencedColumnName = "cat_id")
+ where book_cat_id= {column name in the Book table}
+            cat_id= {column name in the current table which has to be mapped}
+            
+  
+  
